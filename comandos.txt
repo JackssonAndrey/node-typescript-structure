@@ -1,0 +1,11 @@
+1 - iniciar git -> git init
+2 - criar package.json -> yarn init -y 
+3 - instalar typescript como dependecia de desenvolvimento -> yarn add -D typescript 
+4 - criar arquivo de configuração do typescript -> yarn tsc --init
+5 - criar a pasta src
+6 - criar o arquivo de entrada da aplcação -> 'server.ts'
+7 - instalar o express -> yarn add express
+8 - configuração inicial do arquivo server.ts com express e uma primeira rota
+9 - instalar 'ts-node-dev' como dependencia de desenvolvimento -> yarn add ts-node-dev -D 
+10 - configurar script para rodar server no 'package.json' -> 'ts-node-dev --respawn --transpileOnly --ignore-watch node_modules --no-notify src/server.ts'
+
