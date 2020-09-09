@@ -8,4 +8,7 @@
 8 - configuração inicial do arquivo server.ts com express e uma primeira rota
 9 - instalar 'ts-node-dev' como dependencia de desenvolvimento -> yarn add ts-node-dev -D 
 10 - configurar script para rodar server no 'package.json' -> 'ts-node-dev --respawn --transpileOnly --ignore-watch node_modules --no-notify src/server.ts'
-
+11 - habilitar configurações no arquivo tsconfig.json -> ver arquivo de configuração ja pronto
+12 - configurar paths da aplicação para melhorar imports -> ver arquivo tsconfig.json
+13 - fazer com que o ts-node-dev entenda os paths criados no arquivo tsconfig.json -> yarn add tsconfig-paths -D
+14 - 
