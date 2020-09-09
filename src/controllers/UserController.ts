@@ -4,6 +4,8 @@ export default class UserController {
   constructor() {
     const a = () => {
       const user = new User();
+      return user;
     };
+    return a;
   }
 }

@@ -18,5 +18,15 @@
   "rules": {
     "lines-between-class-members": "off",
     "import/no-unresolved": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts"
+        ]
+      }
+    }
   }
 }

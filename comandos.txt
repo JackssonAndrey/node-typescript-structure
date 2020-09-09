@@ -11,4 +11,16 @@
 11 - habilitar configurações no arquivo tsconfig.json -> ver arquivo de configuração ja pronto
 12 - configurar paths da aplicação para melhorar imports -> ver arquivo tsconfig.json
 13 - fazer com que o ts-node-dev entenda os paths criados no arquivo tsconfig.json -> yarn add tsconfig-paths -D
-14 - 
+14 - modificar script de dev no package.json para registrar os paths toda vez que o server reiniciar -> -r tsconfig-paths/register
+15 - instalar o eslint para padronização e estilização do codigo -> yarn eslint --init (usar configuração do airbnb)
+16 - instalar jest para realizar testes na aplcação -> yarn add jest -D 
+17 - por padrao o jest não funciona com typescript -> yarn add ts-jest -D 
+18 - instalar também os types do jest -> yarn add @types/jest -D 
+19 - criar o arquivo jest.config -> yarn jest --init
+20 - No arquivo de configuração do jest importar o pathstomodulenamemapper de ts-jest/utils e o compileoptions do tsconfig.json -> 
+vai fazer com que possamos usar o @models/user nos imports dentro do jest
+21 - no tsconfig.json fazer com que o arquivo de configuração do jest não seja necessário estar dentro da pasta src -> "include": ["src/**/*"]
+22 - fazer instalar do babel e de outras dependencias -> yarn add -D @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver
+23 - criar arquivo de configuração do babel -> babel.config.js (pegar como exemplo o arquivo ja configurado)
+24 - no package.json criar o script para build com babel -> babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored
+25 - no package.json criar o script para rodar o server em produção -> node dist/server.js
